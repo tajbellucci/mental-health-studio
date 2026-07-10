@@ -36,6 +36,12 @@ Honesty deltas from MHIS (kept deliberately): no fabricated volume metrics (thei
 - Type: Instrument Serif (display) + Karla (body).
 - Same proven layout skeleton as PiaB site: hero → pains → the desk → demo → how → calm-marketing → pricing → about → FAQ → final CTA.
 
+## Rebuild 2026-07-10 (v3 — faithful MHIS structural clone)
+
+Per Taj: full-fidelity clone of the MHIS homepage composition, original copy throughout. Added vs v2: dropdown nav (Services/Who We Serve) + phone number, hero dashboard with activity feed + floating ranking/traffic chips + 5-star avatar trust row, 98%-retention callout band, about-section quote + 10+yrs/150+ stats, service tag-chips, audit lead-capture form (name/email/website → mailto handoff), Expertise Score panel with animated bars (96/94/90/88/85), methodology deliverables per stage, impact stats band with growth indicators, portfolio mini-site thumbnails, credentialed testimonials with stars, blog cards with read times, FAQ quick-links, final CTA stats repeat, footer contact grid + Systems Normal.
+
+**Pre-launch content checklist (numbers are placeholder design content until real):** 150+ practices / 40k+ inquiries / 400+ articles / 98% retention / 3–5x ROAS / 10+ years — replace with real figures or remove at launch. Testimonial names are illustrative — swap for real client approvals. Phone +1 (000) 000-0000.
+
 ## Placeholders to replace before launch
 
 - `https://cal.com/willowdesk/fit-call` — real booking link
