@@ -408,3 +408,52 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.meter .m-bar i{transition:none}}
+
+
+/* ---------- real screenshots ---------- */
+.shot{display:block;width:100%;height:190px;object-fit:cover;object-position:top;background:var(--paper-2);border-bottom:1px solid var(--line)}
+.feature-row .shot{height:240px;border:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0}
+.owner-tag{position:absolute;top:12px;left:12px;z-index:2;font-size:.64rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;border-radius:999px;padding:4px 11px;backdrop-filter:blur(4px)}
+.own-f{background:rgba(180,85,45,.92);color:#fff}
+.own-c{background:rgba(111,127,99,.92);color:#fff}
+.own-u{background:rgba(38,32,26,.85);color:#F1EDE4}
+.port{position:relative}
+
+/* ---------- phone mockup (Aiza AI) ---------- */
+.phone{width:230px;background:#101014;border-radius:30px;padding:10px;box-shadow:0 24px 60px rgba(0,0,0,.28);margin:0 auto}
+.phone-scr{background:linear-gradient(175deg,#1B1E2E 0%,#232946 100%);border-radius:22px;overflow:hidden;color:#EDEFF7;font-size:.68rem}
+.ph-top{display:flex;align-items:center;gap:8px;padding:12px 12px 10px;border-bottom:1px solid rgba(255,255,255,.08)}
+.ph-av{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,#B4552D,#E8A93C);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.6rem;flex:none}
+.ph-top b{font-size:.72rem;display:block}
+.ph-top small{color:#9AA3C0;font-size:.58rem}
+.ph-chat{padding:12px;display:grid;gap:8px;min-height:190px}
+.bub{max-width:82%;padding:8px 11px;border-radius:12px;line-height:1.45}
+.bub.ai{background:rgba(255,255,255,.09);border-bottom-left-radius:4px;justify-self:start}
+.bub.me{background:#B4552D;color:#fff;border-bottom-right-radius:4px;justify-self:end}
+.bub .ur{display:block;font-size:.78rem;direction:rtl;text-align:right;color:#E8A93C;margin-bottom:3px}
+.ph-voice{display:flex;align-items:center;gap:3px;padding:0 12px 6px}
+.ph-voice i{width:3px;border-radius:2px;background:#E8A93C;animation:vb 1s ease-in-out infinite alternate}
+.ph-voice i:nth-child(2){height:12px;animation-delay:.1s}.ph-voice i:nth-child(3){height:16px;animation-delay:.2s}.ph-voice i:nth-child(4){height:9px;animation-delay:.3s}.ph-voice i:nth-child(5){height:14px;animation-delay:.15s}.ph-voice i:nth-child(6){height:7px;animation-delay:.25s}
+.ph-voice i:first-child{height:8px}
+@keyframes vb{to{transform:scaleY(1.7)}}
+@media(prefers-reduced-motion:reduce){.ph-voice i{animation:none}}
+.ph-in{margin:0 12px 12px;background:rgba(255,255,255,.08);border-radius:999px;padding:8px 12px;color:#9AA3C0;display:flex;justify-content:space-between;align-items:center}
+.app-spot{background:var(--ink);color:var(--paper);border-radius:24px;padding:52px 48px;display:grid;grid-template-columns:1fr 260px;gap:44px;align-items:center;overflow:hidden;position:relative}
+@media(max-width:860px){.app-spot{grid-template-columns:1fr;padding:36px 26px}}
+.app-spot::before{content:"";position:absolute;top:-40%;right:-10%;width:420px;height:420px;background:radial-gradient(circle,rgba(180,85,45,.25) 0%,transparent 65%);border-radius:50%}
+.app-spot>*{position:relative}
+.app-spot .kicker{background:rgba(180,85,45,.2);color:var(--star)}
+.app-spot h2,.app-spot h3{color:var(--paper)}
+.app-spot p{color:var(--muted-2)}
+.app-spot ul{list-style:none;display:grid;gap:9px;margin-top:16px}
+.app-spot li{display:flex;gap:10px;font-size:.92rem;color:#DCD4C6}
+.app-spot li::before{content:"✓";color:var(--star);font-weight:800}
+
+/* ---------- blog figures & toc ---------- */
+.prose figure{margin:26px 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+.prose figure svg{display:block;width:100%;height:auto}
+.prose figcaption{font-size:.8rem;color:var(--muted);padding:10px 16px;border-top:1px solid var(--line);font-weight:600}
+.toc{background:var(--paper-2);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:0 0 28px;font-size:.9rem}
+.toc b{display:block;margin-bottom:8px;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.toc a{display:block;color:var(--clay-deep);text-decoration:none;padding:3px 0;font-weight:600}
+.toc a:hover{text-decoration:underline}
