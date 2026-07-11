@@ -3,423 +3,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Willowdesk — HIPAA-Compliant Websites, Apps & Digital Marketing for Mental Health Professionals</title>
-<meta name="description" content="Willowdesk is the digital growth partner built exclusively for mental-health professionals in the US, Canada and UK. HIPAA-compliant website design, mobile app development, SEO, Google Ads and AI marketing.">
-<meta property="og:title" content="Willowdesk — The growth partner built only for mental health pros">
+<title>Mental Health Studio — HIPAA-Compliant Websites, Apps & Digital Marketing for Mental Health Professionals</title>
+<meta name="description" content="Mental Health Studio is the digital growth partner built exclusively for mental-health professionals in the US, Canada and UK. HIPAA-compliant website design, mobile app development, SEO, Google Ads and AI marketing.">
+<meta property="og:title" content="Mental Health Studio — The growth partner built only for mental health pros">
 <meta property="og:description" content="HIPAA-compliant websites, mobile apps, SEO, Google Ads and AI marketing — built exclusively for therapists, psychologists, psychiatrists and group practices.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Willowdesk",
+  "name": "Mental Health Studio",
   "description": "HIPAA-compliant website design, mobile app development, SEO, Google Ads and AI marketing for mental-health professionals.",
   "areaServed": ["US", "CA", "GB"],
   "founder": {"@type": "Person", "name": "Taj Magsi"},
   "knowsAbout": ["HIPAA compliant web design", "mental health marketing", "therapist SEO", "healthcare app development", "Google Ads for therapists"]
 }
 </script>
-<style>
-:root{
-  --ink:#26201A;
-  --ink-2:#332B23;
-  --paper:#FAF8F4;
-  --paper-2:#F3EFE7;
-  --card:#FFFFFF;
-  --line:#E7E0D3;
-  --clay:#B4552D;
-  --clay-deep:#96431F;
-  --clay-wash:rgba(180,85,45,.09);
-  --sage:#6F7F63;
-  --sage-deep:#57654C;
-  --sage-wash:rgba(111,127,99,.11);
-  --amber:#C08A2D;
-  --amber-wash:rgba(192,138,45,.12);
-  --star:#E8A93C;
-  --up:#3E7D4E;
-  --muted:#6E6459;
-  --muted-2:#B3AA9C;
-  --radius:16px;
-  --shadow:0 10px 30px rgba(38,32,26,.07);
-  --shadow-lg:0 26px 60px rgba(38,32,26,.14);
-  --font-display:"Sora","Segoe UI",sans-serif;
-  --font-body:"Manrope","Segoe UI",sans-serif;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{font-family:var(--font-body);background:var(--paper);color:var(--ink);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:var(--font-display);font-weight:600;line-height:1.18;letter-spacing:-.015em}
-a{color:inherit}
-img{max-width:100%}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-section{padding:96px 0}
-@media(max-width:720px){section{padding:60px 0}body{font-size:15.5px}}
-
-.kicker{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--clay);background:var(--clay-wash);border-radius:999px;padding:6px 14px;margin-bottom:18px}
-.sec-title{font-size:clamp(1.8rem,3.8vw,2.6rem);max-width:26ch;margin-bottom:16px}
-.sec-title em{font-style:normal;color:var(--clay)}
-.sec-sub{color:var(--muted);max-width:62ch;font-size:1.04rem}
-.sec-head{margin-bottom:52px}
-.sec-head.center{text-align:center}
-.sec-head.center .sec-title,.sec-head.center .sec-sub{margin-left:auto;margin-right:auto}
-
-.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 28px;border-radius:12px;text-decoration:none;font-weight:700;font-size:.95rem;border:none;cursor:pointer;transition:transform .18s,box-shadow .18s,background .2s;font-family:var(--font-body)}
-.btn:hover{transform:translateY(-2px)}
-.btn:focus-visible{outline:3px solid var(--clay);outline-offset:3px}
-.btn-primary{background:var(--clay);color:#fff;box-shadow:0 8px 22px rgba(180,85,45,.3)}
-.btn-primary:hover{background:var(--clay-deep)}
-.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
-.btn-ghost:hover{background:var(--ink);color:var(--paper)}
-.btn-light{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
-.btn-light:hover{border-color:var(--ink)}
-.btn-sm{padding:10px 20px;font-size:.88rem}
-
-/* icon chip — one consistent icon language: 2px stroke, round caps, tinted rounded square */
-.ic{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex:none;background:var(--clay-wash);color:var(--clay)}
-.ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.ic.sage{background:var(--sage-wash);color:var(--sage-deep)}
-.ic.amber{background:var(--amber-wash);color:var(--amber)}
-.ic.sm{width:40px;height:40px;border-radius:11px}
-.ic.sm svg{width:20px;height:20px}
-
-/* ---------- nav ---------- */
-nav.top{position:sticky;top:0;z-index:100;background:rgba(250,248,244,.92);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
-nav.top.scrolled{border-bottom-color:var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px;gap:18px}
-.logo{font-family:var(--font-display);font-weight:700;font-size:1.2rem;text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:-.02em}
-.logo-mark{width:30px;height:30px;background:var(--clay);border-radius:9px;display:inline-block;position:relative;flex:none}
-.logo-mark::after{content:"";position:absolute;left:7px;right:7px;top:17px;height:3px;background:var(--paper);border-radius:2px}
-.logo-mark::before{content:"";position:absolute;left:11px;right:11px;top:9px;height:3px;background:var(--paper);border-radius:2px}
-.nav-links{display:flex;gap:4px;align-items:center;list-style:none}
-.nav-links>li{position:relative}
-.nav-links>li>a:not(.btn){text-decoration:none;font-size:.9rem;font-weight:600;color:var(--muted);transition:color .2s;padding:10px 12px;border-radius:9px;display:inline-flex;align-items:center;gap:5px}
-.nav-links>li>a:not(.btn):hover{color:var(--ink);background:var(--paper-2)}
-.caret{width:9px;height:9px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);display:inline-block}
-.dropdown{position:absolute;top:calc(100% + 6px);left:0;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-lg);min-width:250px;padding:10px;opacity:0;visibility:hidden;transform:translateY(6px);transition:all .2s;z-index:110}
-li:hover>.dropdown,li:focus-within>.dropdown{opacity:1;visibility:visible;transform:none}
-.dropdown a{display:block;text-decoration:none;font-size:.88rem;font-weight:600;color:var(--ink-2);padding:10px 14px;border-radius:9px}
-.dropdown a:hover{background:var(--clay-wash);color:var(--clay-deep)}
-.nav-phone{font-size:.88rem;font-weight:700;text-decoration:none;color:var(--ink);white-space:nowrap;display:inline-flex;align-items:center;gap:7px}
-.nav-phone svg{width:16px;height:16px;fill:none;stroke:var(--clay);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.nav-right{display:flex;align-items:center;gap:16px}
-@media(max-width:1060px){.nav-links{display:none}}
-@media(max-width:560px){.nav-phone span{display:none}}
-
-/* ---------- hero ---------- */
-.hero{position:relative;padding:88px 0 84px;overflow:hidden}
-.hero::before{content:"";position:absolute;top:-25%;right:-12%;width:58vw;height:58vw;max-width:800px;max-height:800px;background:radial-gradient(circle,var(--clay-wash) 0%,transparent 62%);border-radius:50%}
-.hero::after{content:"";position:absolute;bottom:-35%;left:-14%;width:44vw;height:44vw;max-width:560px;max-height:560px;background:radial-gradient(circle,var(--sage-wash) 0%,transparent 62%);border-radius:50%}
-.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;position:relative;z-index:1}
-@media(max-width:980px){.hero-grid{grid-template-columns:1fr;gap:52px}}
-.hero h1{font-size:clamp(2.3rem,4.8vw,3.5rem);margin-bottom:22px;font-weight:700}
-.hero h1 span{color:var(--clay)}
-.hero-sub{font-size:1.12rem;color:var(--muted);max-width:54ch;margin-bottom:34px}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
-.hero-proof{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.avatars{display:flex}
-.avatars span{width:40px;height:40px;border-radius:50%;border:2.5px solid var(--paper);display:flex;align-items:center;justify-content:center;font-size:.68rem;font-weight:800;color:#fff;margin-left:-10px}
-.avatars span:first-child{margin-left:0}
-.av1{background:var(--sage)} .av2{background:var(--clay)} .av3{background:var(--amber)} .av4{background:var(--ink-2)} .av5{background:var(--sage-deep)}
-.stars{color:var(--star);font-size:.92rem;letter-spacing:2px}
-.hero-proof small{display:block;font-size:.84rem;color:var(--muted);font-weight:600}
-.hero-proof small strong{color:var(--ink)}
-
-/* dashboard mockup */
-.dash-zone{position:relative}
-.dash{background:var(--card);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-lg);padding:24px;position:relative;z-index:1}
-.dash-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;gap:12px;flex-wrap:wrap}
-.dash-head h3{font-size:1rem;font-weight:600}
-.dash-head p{font-size:.74rem;color:var(--muted)}
-.dash-badge{font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--sage-deep);background:var(--sage-wash);border-radius:999px;padding:5px 11px;display:inline-flex;align-items:center;gap:5px}
-.dash-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--sage-deep)}
-.dash-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}
-@media(max-width:440px){.dash-stats{grid-template-columns:1fr}}
-.dash-stat{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:13px}
-.dash-stat b{font-family:var(--font-display);font-size:1.3rem;display:block;font-weight:700}
-.dash-stat small{font-size:.7rem;color:var(--muted);font-weight:600;display:block;line-height:1.35}
-.dash-stat em{font-style:normal;font-size:.68rem;font-weight:800;color:var(--up)}
-.dash-chart{margin-bottom:14px}
-.dash-chart p{font-size:.72rem;font-weight:700;color:var(--muted);margin-bottom:8px}
-.dash-bars{display:flex;align-items:flex-end;gap:7px;height:64px;padding:0 2px}
-.dash-bars i{flex:1;background:linear-gradient(180deg,var(--clay) 0%,var(--clay-deep) 100%);border-radius:4px 4px 0 0;opacity:.9}
-.dash-feed{border-top:1px solid var(--line);padding-top:12px;display:grid;gap:8px}
-.dash-feed div{display:flex;align-items:center;gap:9px;font-size:.74rem;color:var(--ink-2);font-weight:600}
-.dash-feed i{width:8px;height:8px;border-radius:50%;flex:none}
-.f1{background:var(--clay)} .f2{background:var(--sage-deep)} .f3{background:var(--amber)}
-.dash-feed time{margin-left:auto;color:var(--muted-2);font-weight:600;font-size:.68rem}
-.chip{position:absolute;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow-lg);padding:10px 14px;font-size:.74rem;font-weight:700;z-index:2;display:flex;align-items:center;gap:9px}
-.chip small{display:block;font-size:.66rem;color:var(--muted);font-weight:600}
-.chip .up{color:var(--up);font-weight:800}
-.chip-a{top:-18px;left:-26px}
-.chip-b{bottom:22px;right:-24px}
-@media(max-width:1120px){.chip-a{left:0}.chip-b{right:0}}
-.rank-pill{background:var(--sage-wash);color:var(--sage-deep);font-weight:800;border-radius:8px;padding:3px 8px;font-size:.7rem;flex:none}
-
-/* ---------- logo row ---------- */
-.logos{padding:36px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2)}
-.logos p{text-align:center;font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);margin-bottom:18px}
-.logo-row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-.logo-row span{font-family:var(--font-display);font-weight:600;font-size:.88rem;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:10px;padding:9px 18px}
-
-/* ---------- pains ---------- */
-.card-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media(max-width:900px){.card-grid-3{grid-template-columns:1fr}}
-.icard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
-.icard:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(38,32,26,.1)}
-.icard .ic{margin-bottom:20px}
-.icard h3{font-size:1.15rem;margin-bottom:10px}
-.icard p{font-size:.93rem;color:var(--muted)}
-.retention{margin-top:36px;background:linear-gradient(120deg,var(--sage-wash),rgba(111,127,99,.04));border:1.5px solid var(--sage);border-radius:var(--radius);padding:26px 30px;display:flex;align-items:center;gap:26px;flex-wrap:wrap}
-.retention b{font-family:var(--font-display);font-size:2.6rem;font-weight:800;color:var(--sage-deep);line-height:1}
-.retention div p{font-weight:700;font-size:1rem}
-.retention div small{color:var(--muted);font-size:.88rem}
-
-/* ---------- about ---------- */
-.about{background:var(--ink);color:var(--paper)}
-.about .sec-sub{color:var(--muted-2)}
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
-@media(max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}}
-.about p.body{color:#CFC7BA;margin-bottom:16px;font-size:1rem}
-.about-side{display:grid;gap:16px}
-.about-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-@media(max-width:440px){.about-stats{grid-template-columns:1fr}}
-.astat{border:1px solid #453A2f;border-radius:14px;padding:22px 18px;background:rgba(255,255,255,.03)}
-.astat b{font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:var(--paper);display:block}
-.astat small{font-size:.78rem;color:var(--muted-2);font-weight:600}
-.about-quote{border:1px solid #453A2f;border-left:3px solid var(--clay);border-radius:14px;padding:20px 22px;background:rgba(255,255,255,.03);font-size:.92rem;color:#CFC7BA;font-style:italic}
-.about-quote footer{font-style:normal;font-size:.76rem;color:var(--muted-2);margin-top:10px;font-weight:700}
-
-/* ---------- services ---------- */
-.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-@media(max-width:860px){.svc-grid{grid-template-columns:1fr}}
-.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;box-shadow:var(--shadow);display:flex;gap:22px;transition:transform .2s,box-shadow .2s}
-.svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(38,32,26,.1)}
-@media(max-width:520px){.svc{flex-direction:column}}
-.svc h3{font-size:1.2rem;margin-bottom:8px}
-.svc>div>p{font-size:.92rem;color:var(--muted);margin-bottom:14px}
-.svc ul{list-style:none;display:grid;gap:8px;margin-bottom:18px}
-.svc li{display:flex;gap:9px;font-size:.88rem;align-items:flex-start;color:var(--ink-2)}
-.svc li::before{content:"✓";color:var(--sage-deep);font-weight:800;flex:none}
-.svc-tags{display:flex;gap:8px;flex-wrap:wrap}
-.svc-tags span{font-size:.7rem;font-weight:800;letter-spacing:.04em;color:var(--clay-deep);background:var(--clay-wash);border-radius:999px;padding:4px 11px}
-
-/* ---------- personas ---------- */
-.personas{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.persona-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:900px){.persona-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.persona-grid{grid-template-columns:1fr}}
-.persona{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;align-items:center;gap:16px;transition:transform .2s,border-color .2s}
-.persona:hover{transform:translateY(-3px);border-color:var(--clay)}
-.persona h3{font-size:1rem}
-.persona small{font-size:.8rem;color:var(--muted)}
-
-/* ---------- audit CTA ---------- */
-.audit{background:linear-gradient(135deg,var(--clay) 0%,var(--clay-deep) 100%);color:#fff;border-radius:24px;padding:56px 48px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;position:relative;overflow:hidden}
-@media(max-width:880px){.audit{grid-template-columns:1fr;padding:40px 28px}}
-.audit::before{content:"";position:absolute;top:-40%;right:-10%;width:440px;height:440px;background:radial-gradient(circle,rgba(255,255,255,.15) 0%,transparent 65%);border-radius:50%}
-.audit h2{font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:14px}
-.audit>div>p{opacity:.92;font-size:1rem;max-width:52ch}
-.audit-value{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border-radius:999px;padding:7px 16px;font-size:.82rem;font-weight:800;margin-bottom:18px}
-.audit-box{background:#fff;color:var(--ink);border-radius:16px;padding:30px;position:relative;box-shadow:0 20px 50px rgba(0,0,0,.18)}
-.audit-box h3{font-size:1.08rem;margin-bottom:16px}
-.audit-box label{display:block;font-size:.76rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
-.audit-box input{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:11px 14px;font-family:var(--font-body);font-size:.92rem;margin-bottom:14px;background:var(--paper);color:var(--ink)}
-.audit-box input:focus{outline:2px solid var(--clay);border-color:var(--clay)}
-.audit-box .btn{width:100%;justify-content:center}
-.audit-trust{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:14px;font-size:.72rem;color:var(--muted);font-weight:700}
-.audit-trust span::before{content:"✓ ";color:var(--sage-deep)}
-
-/* ---------- why us ---------- */
-.why-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
-@media(max-width:980px){.why-wrap{grid-template-columns:1fr}}
-.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-@media(max-width:560px){.why-grid{grid-template-columns:1fr}}
-.why-grid .icard{padding:26px 24px}
-.why-grid .icard h3{font-size:1.05rem}
-.why-grid .icard p{font-size:.87rem}
-.score{background:var(--ink);color:var(--paper);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow-lg)}
-.score h3{font-size:1.1rem;margin-bottom:6px}
-.score>p{font-size:.82rem;color:var(--muted-2);margin-bottom:24px}
-.meter{margin-bottom:18px}
-.meter .m-row{display:flex;justify-content:space-between;font-size:.82rem;font-weight:700;margin-bottom:7px}
-.meter .m-row b{color:var(--star)}
-.meter .m-bar{height:8px;background:#453A2f;border-radius:99px;overflow:hidden}
-.meter .m-bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--clay),var(--star));width:0;transition:width 1.1s cubic-bezier(.2,.7,.3,1)}
-.score.in .m-bar i{width:var(--w)}
-
-/* ---------- process ---------- */
-.process{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:proc}
-@media(max-width:980px){.proc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.proc-grid{grid-template-columns:1fr}}
-.proc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;position:relative}
-.proc::before{counter-increment:proc;content:"0" counter(proc);font-family:var(--font-display);font-weight:700;font-size:.82rem;color:var(--clay);background:var(--clay-wash);border-radius:999px;padding:5px 12px;display:inline-block;margin-bottom:16px}
-.proc h3{font-size:1.08rem;margin-bottom:8px}
-.proc>p{font-size:.86rem;color:var(--muted);margin-bottom:14px}
-.proc ul{list-style:none;display:grid;gap:7px;border-top:1px dashed var(--line);padding-top:14px}
-.proc li{display:flex;gap:8px;font-size:.8rem;color:var(--ink-2);font-weight:600;align-items:flex-start}
-.proc li::before{content:"→";color:var(--clay);font-weight:800;flex:none}
-
-/* ---------- impact stats ---------- */
-.stats-band{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-@media(max-width:900px){.stats-band{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:480px){.stats-band{grid-template-columns:1fr}}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;box-shadow:var(--shadow);text-align:left}
-.stat .ic{margin-bottom:16px}
-.stat b{font-family:var(--font-display);font-size:2.2rem;font-weight:800;color:var(--ink);display:block;line-height:1.1}
-.stat p{font-size:.88rem;color:var(--muted);font-weight:600;margin:4px 0 8px}
-.stat em{font-style:normal;font-size:.74rem;font-weight:800;color:var(--up)}
-.stat em::before{content:"▲ "}
-
-/* ---------- portfolio ---------- */
-.port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media(max-width:900px){.port-grid{grid-template-columns:1fr}}
-.port{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;text-decoration:none;display:block}
-.port:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(38,32,26,.1)}
-.thumb{height:180px;padding:22px 22px 0;display:flex;align-items:flex-end;justify-content:center}
-.mini{width:100%;max-width:250px;background:#fff;border-radius:10px 10px 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.18);overflow:hidden}
-.mini-bar{height:14px;display:flex;align-items:center;gap:3px;padding:0 7px;background:#EDE7DB}
-.mini-bar i{width:5px;height:5px;border-radius:50%;background:#C9C0AE}
-.mini-body{padding:10px 12px 14px}
-.mini-h{height:8px;border-radius:4px;margin-bottom:6px;width:70%}
-.mini-l{height:5px;border-radius:3px;background:#E7E0D3;margin-bottom:4px}
-.mini-l.short{width:60%}
-.mini-cta{height:9px;width:38%;border-radius:5px;margin-top:8px}
-.th1{background:linear-gradient(135deg,var(--sage) 0%,var(--sage-deep) 100%)}
-.th2{background:linear-gradient(135deg,var(--clay) 0%,var(--clay-deep) 100%)}
-.th3{background:linear-gradient(135deg,var(--ink-2) 0%,var(--ink) 100%)}
-.th4{background:linear-gradient(135deg,var(--amber) 0%,#8f6620 100%)}
-.th5{background:linear-gradient(135deg,#7d6b56 0%,#4f4336 100%)}
-.th6{background:linear-gradient(135deg,var(--sage-deep) 0%,var(--ink) 100%)}
-.hb1 .mini-h,.hb1 .mini-cta{background:var(--sage-deep)}
-.hb2 .mini-h,.hb2 .mini-cta{background:var(--clay)}
-.hb3 .mini-h,.hb3 .mini-cta{background:var(--ink-2)}
-.hb4 .mini-h,.hb4 .mini-cta{background:var(--amber)}
-.hb5 .mini-h,.hb5 .mini-cta{background:#7d6b56}
-.hb6 .mini-h,.hb6 .mini-cta{background:var(--sage-deep)}
-.port-body{padding:20px 22px;border-top:1px solid var(--line)}
-.port-body h3{font-size:1rem;margin-bottom:4px}
-.port-body p{font-size:.82rem;color:var(--muted);margin-bottom:10px}
-.port-body span{font-size:.82rem;font-weight:800;color:var(--clay)}
-
-/* ---------- testimonials ---------- */
-.testi{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.testi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-@media(max-width:980px){.testi-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.testi-grid{grid-template-columns:1fr}}
-.tcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 22px;display:flex;flex-direction:column;gap:14px}
-.tcard .stars{font-size:.8rem}
-.tcard q{font-size:.9rem;color:var(--ink-2);quotes:"“" "”"}
-.tcard footer{display:flex;align-items:center;gap:12px;margin-top:auto}
-.tcard footer span{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;color:#fff;flex:none}
-.tcard footer b{font-size:.86rem;display:block}
-.tcard footer small{font-size:.74rem;color:var(--muted)}
-
-/* ---------- blog ---------- */
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-@media(max-width:900px){.blog-grid{grid-template-columns:1fr}}
-.bcard{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden;box-shadow:var(--shadow);transition:transform .2s;text-decoration:none;display:block}
-.bcard:hover{transform:translateY(-4px)}
-.bcard-thumb{height:130px;position:relative;overflow:hidden}
-.bt1{background:linear-gradient(120deg,var(--sage-wash),var(--paper-2)),repeating-linear-gradient(45deg,transparent 0 14px,rgba(111,127,99,.08) 14px 15px)}
-.bt2{background:linear-gradient(120deg,var(--clay-wash),var(--paper-2)),repeating-linear-gradient(-45deg,transparent 0 14px,rgba(180,85,45,.08) 14px 15px)}
-.bt3{background:linear-gradient(120deg,var(--amber-wash),var(--paper-2)),repeating-linear-gradient(90deg,transparent 0 14px,rgba(192,138,45,.08) 14px 15px)}
-.bcard-thumb .ic{position:absolute;bottom:14px;left:16px}
-.bcard-body{padding:22px}
-.bcard-body .tag{font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--clay)}
-.bcard-body h3{font-size:1.02rem;margin:8px 0 10px}
-.bcard-body small{font-size:.78rem;color:var(--muted);font-weight:600}
-
-/* ---------- faq ---------- */
-.faq-quick{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
-.faq-list{max-width:800px;margin:0 auto;display:grid;gap:14px}
-.faq-list details{border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
-.faq-list summary{cursor:pointer;padding:22px 26px;font-weight:700;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
-.faq-list summary::-webkit-details-marker{display:none}
-.faq-list summary::after{content:"+";font-family:var(--font-display);font-size:1.4rem;color:var(--clay);transition:transform .25s;flex:none;line-height:1}
-.faq-list details[open] summary::after{transform:rotate(45deg)}
-.faq-a{padding:0 26px 24px;color:var(--muted);font-size:.94rem}
-
-/* ---------- final ---------- */
-.final{background:var(--ink);color:var(--paper);text-align:center;position:relative;overflow:hidden}
-.final::before{content:"";position:absolute;top:-50%;left:50%;transform:translateX(-50%);width:70vw;height:70vw;max-width:900px;max-height:900px;background:radial-gradient(circle,rgba(180,85,45,.22) 0%,transparent 60%);border-radius:50%}
-.final .wrap{position:relative}
-.final h2{font-size:clamp(1.9rem,4.4vw,3rem);max-width:24ch;margin:0 auto 18px}
-.final>.wrap>p{color:var(--muted-2);max-width:54ch;margin:0 auto 34px}
-.final-stats{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:34px 0 30px}
-.fstat{border:1px solid #453A2f;border-radius:12px;padding:14px 22px;background:rgba(255,255,255,.04)}
-.fstat b{font-family:var(--font-display);font-size:1.3rem;font-weight:700;display:block}
-.fstat small{font-size:.72rem;color:var(--muted-2);font-weight:700}
-.final-trust{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:24px;font-size:.8rem;color:var(--muted-2);font-weight:700}
-.final-trust span::before{content:"✓ ";color:var(--sage)}
-
-/* ---------- footer ---------- */
-footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3128;padding:60px 0 34px;font-size:.88rem}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.2fr;gap:40px;margin-bottom:40px}
-@media(max-width:900px){.foot-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
-.foot-grid h4{color:var(--paper);font-size:.9rem;margin-bottom:14px}
-.foot-grid ul{list-style:none;display:grid;gap:9px}
-.foot-grid a{text-decoration:none;color:var(--muted-2)}
-.foot-grid a:hover{color:var(--paper)}
-.foot-brand p{max-width:32ch;margin-top:12px;font-size:.84rem}
-.foot-contact div{display:flex;gap:11px;align-items:flex-start;margin-bottom:12px}
-.foot-contact .ic{width:34px;height:34px;border-radius:9px;background:rgba(180,85,45,.16)}
-.foot-contact .ic svg{width:16px;height:16px}
-.foot-contact b{color:var(--paper);font-size:.82rem;display:block}
-.foot-contact small{font-size:.8rem}
-.foot-bottom{border-top:1px solid #3a3128;padding-top:24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.8rem;align-items:center}
-.foot-bottom a{color:var(--muted-2);text-decoration:none}
-.foot-bottom a:hover{color:var(--paper)}
-.status{display:inline-flex;align-items:center;gap:7px}
-.status i{width:8px;height:8px;border-radius:50%;background:#5FA36A;display:inline-block}
-.li-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid #453A2f;margin-top:14px}
-.li-btn svg{width:16px;height:16px;fill:var(--paper)}
-
-/* ---------- reveal ---------- */
-.reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
-.reveal.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.meter .m-bar i{transition:none}}
-</style>
 </head>
 <body>
 
 <nav class="top" id="nav" aria-label="Main">
   <div class="wrap nav-inner">
-    <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true"></span>Willowdesk</a>
+    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span>Mental Health <em>Studio</em></a>
     <ul class="nav-links">
-      <li><a href="#top">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services <span class="caret" aria-hidden="true"></span></a>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="index.html#services">Services <span class="caret" aria-hidden="true"></span></a>
         <div class="dropdown">
-          <a href="#svc-web">Website Development</a>
-          <a href="#svc-app">App Development</a>
-          <a href="#svc-seo">SEO &amp; Content Marketing</a>
-          <a href="#svc-smo">Social Media Optimization</a>
-          <a href="#svc-ads">Google Ads Management</a>
-          <a href="#svc-ai">AI Marketing Optimization</a>
+          <a href="services/website-development.html">Website Development</a>
+          <a href="services/app-development.html">App Development</a>
+          <a href="services/seo-content-marketing.html">SEO &amp; Content Marketing</a>
+          <a href="services/social-media-optimization.html">Social Media Optimization</a>
+          <a href="services/google-ads-management.html">Google Ads Management</a>
+          <a href="services/ai-optimization.html">AI Marketing Optimization</a>
         </div>
       </li>
-      <li><a href="#personas">Who We Serve <span class="caret" aria-hidden="true"></span></a>
+      <li><a href="index.html#personas">Who We Serve <span class="caret" aria-hidden="true"></span></a>
         <div class="dropdown">
-          <a href="#personas">Group Practices</a>
-          <a href="#personas">Treatment Centers</a>
-          <a href="#personas">Counselors</a>
-          <a href="#personas">Therapists</a>
-          <a href="#personas">Psychiatrists</a>
-          <a href="#personas">Psychologists</a>
+          <a href="who-we-serve/group-practices.html">Group Practices</a>
+          <a href="who-we-serve/treatment-centers.html">Treatment Centers</a>
+          <a href="who-we-serve/counselors.html">Counselors</a>
+          <a href="who-we-serve/therapists.html">Therapists</a>
+          <a href="who-we-serve/psychiatrists.html">Psychiatrists</a>
+          <a href="who-we-serve/psychologists.html">Psychologists</a>
         </div>
       </li>
-      <li><a href="#work">Portfolio</a></li>
-      <li><a href="#resources">Blog</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
     </ul>
     <div class="nav-right">
       <a class="nav-phone" href="tel:+10000000000"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.13.96.36 1.9.7 2.8a2 2 0 01-.45 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0122 16.9z"/></svg><span>+1 (000) 000-0000</span></a>
-      <a class="btn btn-primary btn-sm" href="#audit">Contact Us</a>
+      <a class="btn btn-primary btn-sm" href="contact.html">Contact Us</a>
     </div>
   </div>
 </nav>
@@ -431,8 +69,8 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
       <h1>The growth partner your <span>practice</span> has been missing.</h1>
       <p class="hero-sub">HIPAA-compliant websites, mobile apps, SEO, Google Ads and AI marketing — designed, built and managed for therapists, psychologists, psychiatrists and group practices across the US, Canada and the UK. You focus on care. We handle the tech and the visibility.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="#audit">Start growing your practice</a>
-        <a class="btn btn-ghost" href="#audit">Get a free practice analysis</a>
+        <a class="btn btn-primary" href="contact.html">Start growing your practice</a>
+        <a class="btn btn-ghost" href="contact.html#audit">Get a free practice analysis</a>
       </div>
       <div class="hero-proof">
         <div class="avatars" aria-hidden="true">
@@ -513,7 +151,7 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
       <b>98%</b>
       <div>
         <p>Client retention rate</p>
-        <small>Practices stay with Willowdesk because results are consistent, transparent, and tied to real practice growth — not vanity metrics.</small>
+        <small>Practices stay with Mental Health Studio because results are consistent, transparent, and tied to real practice growth — not vanity metrics.</small>
       </div>
     </div>
   </div>
@@ -524,8 +162,9 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
     <div class="reveal">
       <span class="kicker">Who we are</span>
       <h2 class="sec-title">Healthcare-tech specialists who chose mental health — and never left.</h2>
-      <p class="body">Willowdesk sits at the bridge between clinical work and technology. We were founded by a digital mental-health builder — not a generalist agency — after years of building mental-health platforms and hearing clinicians describe the same gap: nobody handles the tech side who actually understands the therapy side.</p>
+      <p class="body">Mental Health Studio sits at the bridge between clinical work and technology. We were founded by a digital mental-health builder — not a generalist agency — after years of building mental-health platforms and hearing clinicians describe the same gap: nobody handles the tech side who actually understands the therapy side.</p>
       <p class="body">So we serve mental-health professionals exclusively. Every website, app and campaign is shaped around clinical workflows, client privacy, and the way people really search for care.</p>
+      <div class="hero-ctas" style="margin-top:26px"><a class="btn btn-light btn-sm" href="about.html">More about the studio →</a></div>
     </div>
     <div class="about-side reveal">
       <div class="about-stats">
@@ -548,10 +187,10 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
       <p class="sec-sub">Everything your practice needs to be found, trusted and booked — HIPAA-aware by default, managed end to end.</p>
     </div>
     <div class="svc-grid">
-      <div class="svc reveal" id="svc-web">
+      <div class="svc reveal">
         <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 9h20M8 21h8M12 18v3"/></svg></div>
         <div>
-          <h3>Website Design &amp; Development</h3>
+          <h3><a href="services/website-development.html">Website Design &amp; Development</a></h3>
           <p>Custom WordPress websites for therapists — built to look like you, load instantly, and turn visitors into booked clients.</p>
           <ul>
             <li>Custom design around your brand and voice — never a recycled theme</li>
@@ -561,10 +200,10 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
           <div class="svc-tags"><span>WordPress</span><span>SEO-first</span><span>HIPAA</span></div>
         </div>
       </div>
-      <div class="svc reveal" id="svc-seo">
+      <div class="svc reveal">
         <div class="ic sage" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
         <div>
-          <h3>SEO &amp; Content Marketing</h3>
+          <h3><a href="services/seo-content-marketing.html">SEO &amp; Content Marketing</a></h3>
           <p>Own the local searches your future clients are typing right now — and keep owning them month after month.</p>
           <ul>
             <li>Google Business Profile optimization for map-pack visibility</li>
@@ -575,10 +214,10 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
           <div class="svc-tags"><span>Local SEO</span><span>Content</span><span>Rankings</span></div>
         </div>
       </div>
-      <div class="svc reveal" id="svc-smo">
+      <div class="svc reveal">
         <div class="ic amber" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18.5h2"/></svg></div>
         <div>
-          <h3>Social Media Optimization</h3>
+          <h3><a href="services/social-media-optimization.html">Social Media Optimization</a></h3>
           <p>A credible, consistent presence that builds trust before the first session — without you living online.</p>
           <ul>
             <li>Branded content calendars planned a month ahead</li>
@@ -589,10 +228,10 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
           <div class="svc-tags"><span>Instagram</span><span>LinkedIn</span><span>Reels</span></div>
         </div>
       </div>
-      <div class="svc reveal" id="svc-app">
+      <div class="svc reveal">
         <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9 7h6M9 11h6M9 15h3"/></svg></div>
         <div>
-          <h3>App Development</h3>
+          <h3><a href="services/app-development.html">App Development</a></h3>
           <p>Custom HIPAA-compliant native apps that keep clients connected to your practice between sessions.</p>
           <ul>
             <li>iOS and Android from a single codebase</li>
@@ -603,10 +242,10 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
           <div class="svc-tags"><span>iOS</span><span>Android</span><span>HIPAA</span></div>
         </div>
       </div>
-      <div class="svc reveal" id="svc-ads">
+      <div class="svc reveal">
         <div class="ic sage" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6z"/></svg></div>
         <div>
-          <h3>Google Ads Management</h3>
+          <h3><a href="services/google-ads-management.html">Google Ads Management</a></h3>
           <p>Paid campaigns that put you in front of therapy-seekers today — while SEO compounds in the background.</p>
           <ul>
             <li>Search, Performance Max and remarketing formats</li>
@@ -617,10 +256,10 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
           <div class="svc-tags"><span>Google Ads</span><span>PPC</span><span>ROI-tracked</span></div>
         </div>
       </div>
-      <div class="svc reveal" id="svc-ai">
+      <div class="svc reveal">
         <div class="ic amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8z"/><path d="M19 15l.9 2.6 2.6.9-2.6.9L19 22l-.9-2.6-2.6-.9 2.6-.9z"/></svg></div>
         <div>
-          <h3>AI Marketing Optimization</h3>
+          <h3><a href="services/ai-optimization.html">AI Marketing Optimization</a></h3>
           <p>Automated systems that scale your visibility and qualify your inquiries — deployed privacy-first, always.</p>
           <ul>
             <li>Content production automation with human review</li>
@@ -642,12 +281,12 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
       <h2 class="sec-title">If you work in mental health, we built this for <em>you.</em></h2>
     </div>
     <div class="persona-grid">
-      <div class="persona reveal"><div class="ic sm" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-3.5 3.8-5 7-5s6 1.5 7 5"/></svg></div><div><h3>Therapists</h3><small>Solo &amp; private practice</small></div></div>
-      <div class="persona reveal"><div class="ic sm sage" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4a4 4 0 014 4c0 1.5-.8 2.8-2 3.5V13a2 2 0 01-4 0v-1.5A4 4 0 0112 4z"/><path d="M9 17h6M10 20h4"/></svg></div><div><h3>Psychologists</h3><small>Assessment &amp; therapy</small></div></div>
-      <div class="persona reveal"><div class="ic sm amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3v4M16 3v4"/><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M9 13h6M12 10v6"/></svg></div><div><h3>Psychiatrists</h3><small>Medication &amp; care management</small></div></div>
-      <div class="persona reveal"><div class="ic sm sage" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 10-3.1 6.3L21 19z"/><path d="M9 10h6M9 13h4"/></svg></div><div><h3>Counselors</h3><small>LPCs, LMHCs &amp; coaches</small></div></div>
-      <div class="persona reveal"><div class="ic sm" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M3 19c.8-2.8 3-4.2 6-4.2s5.2 1.4 6 4.2M14.5 14.6c2.3.3 4 1.5 4.7 3.9"/></svg></div><div><h3>Group Practices</h3><small>Multi-clinician teams</small></div></div>
-      <div class="persona reveal"><div class="ic sm amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6M3 21h18"/></svg></div><div><h3>Treatment Centers</h3><small>IOP, PHP &amp; residential</small></div></div>
+      <a class="persona reveal" href="who-we-serve/therapists.html"><div class="ic sm" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-3.5 3.8-5 7-5s6 1.5 7 5"/></svg></div><div><h3>Therapists</h3><small>Solo &amp; private practice</small></div></a>
+      <a class="persona reveal" href="who-we-serve/psychologists.html"><div class="ic sm sage" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4a4 4 0 014 4c0 1.5-.8 2.8-2 3.5V13a2 2 0 01-4 0v-1.5A4 4 0 0112 4z"/><path d="M9 17h6M10 20h4"/></svg></div><div><h3>Psychologists</h3><small>Assessment &amp; therapy</small></div></a>
+      <a class="persona reveal" href="who-we-serve/psychiatrists.html"><div class="ic sm amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3v4M16 3v4"/><rect x="4" y="5" width="16" height="16" rx="2"/><path d="M9 13h6M12 10v6"/></svg></div><div><h3>Psychiatrists</h3><small>Medication &amp; care management</small></div></a>
+      <a class="persona reveal" href="who-we-serve/counselors.html"><div class="ic sm sage" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 10-3.1 6.3L21 19z"/><path d="M9 10h6M9 13h4"/></svg></div><div><h3>Counselors</h3><small>LPCs, LMHCs &amp; coaches</small></div></a>
+      <a class="persona reveal" href="who-we-serve/group-practices.html"><div class="ic sm" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="16.5" cy="9.5" r="2.5"/><path d="M3 19c.8-2.8 3-4.2 6-4.2s5.2 1.4 6 4.2M14.5 14.6c2.3.3 4 1.5 4.7 3.9"/></svg></div><div><h3>Group Practices</h3><small>Multi-clinician teams</small></div></a>
+      <a class="persona reveal" href="who-we-serve/treatment-centers.html"><div class="ic sm amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-6h6v6M3 21h18"/></svg></div><div><h3>Treatment Centers</h3><small>IOP, PHP &amp; residential</small></div></a>
     </div>
   </div>
 </section>
@@ -662,13 +301,17 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
       </div>
       <div class="audit-box">
         <h3>Get your free practice audit</h3>
-        <form id="auditForm">
+        <form action="https://formsubmit.co/pactofficialorg@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Free practice audit request — Mental Health Studio">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://tajbellucci.github.io/mental-health-studio/thanks.html">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <label for="af-name">Your name</label>
-          <input id="af-name" name="name" type="text" placeholder="Dr. Jane Smith" autocomplete="name">
+          <input id="af-name" name="name" type="text" placeholder="Dr. Jane Smith" autocomplete="name" required>
           <label for="af-email">Email</label>
-          <input id="af-email" name="email" type="email" placeholder="you@yourpractice.com" autocomplete="email">
+          <input id="af-email" name="email" type="email" placeholder="you@yourpractice.com" autocomplete="email" required>
           <label for="af-site">Practice website</label>
-          <input id="af-site" name="site" type="url" placeholder="https://yourpractice.com">
+          <input id="af-site" name="website" type="url" placeholder="https://yourpractice.com">
           <button class="btn btn-primary" type="submit">Get my free audit</button>
         </form>
         <div class="audit-trust"><span>100% secure</span><span>No spam, ever</span><span>No obligation</span></div>
@@ -680,7 +323,7 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
 <section id="why">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <span class="kicker">Why Willowdesk</span>
+      <span class="kicker">Why Mental Health Studio</span>
       <h2 class="sec-title">Specialists beat generalists. <em>Every time.</em></h2>
     </div>
     <div class="why-wrap">
@@ -707,7 +350,7 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
         </div>
       </div>
       <div class="score reveal" id="score">
-        <h3>Willowdesk Expertise Score</h3>
+        <h3>Studio Expertise Score</h3>
         <p>Where our depth actually is — measured against what mental-health practices need.</p>
         <div class="meter"><div class="m-row"><span>Mental-health SEO</span><b>96%</b></div><div class="m-bar"><i style="--w:96%"></i></div></div>
         <div class="meter"><div class="m-row"><span>Google Ads for mental health</span><b>94%</b></div><div class="m-bar"><i style="--w:94%"></i></div></div>
@@ -809,35 +452,31 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
 <section id="work">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <span class="kicker">Our work</span>
-      <h2 class="sec-title">Built for practices like <em>yours.</em></h2>
+      <span class="kicker">Use cases</span>
+      <h2 class="sec-title">What great looks like — <em>in the wild.</em></h2>
+      <p class="sec-sub">Six real practice websites (independent practices, not our clients) that prove the patterns we build: clear positioning, calm design, education-forward trust. Full analyses on the portfolio page.</p>
     </div>
     <div class="port-grid">
-      <a class="port reveal" href="#audit">
-        <div class="thumb th1"><div class="mini hb1"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
-        <div class="port-body"><h3>Dr. Rowan Ellis</h3><p>Adult autism &amp; neurodivergence specialist</p><span>View project →</span></div>
-      </a>
-      <a class="port reveal" href="#audit">
-        <div class="thumb th2"><div class="mini hb2"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
-        <div class="port-body"><h3>Lakeside Psychological Associates</h3><p>Multi-clinician group practice</p><span>View project →</span></div>
-      </a>
-      <a class="port reveal" href="#audit">
-        <div class="thumb th3"><div class="mini hb3"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
-        <div class="port-body"><h3>Northlight Psychiatry</h3><p>Psychiatric care &amp; medication management</p><span>View project →</span></div>
-      </a>
-      <a class="port reveal" href="#audit">
-        <div class="thumb th4"><div class="mini hb4"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
-        <div class="port-body"><h3>Mind Ease Therapy</h3><p>LCSW private practice</p><span>View project →</span></div>
-      </a>
-      <a class="port reveal" href="#audit">
-        <div class="thumb th5"><div class="mini hb5"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
-        <div class="port-body"><h3>Stillwater Trauma Counseling</h3><p>Trauma &amp; EMDR specialty practice</p><span>View project →</span></div>
-      </a>
-      <a class="port reveal" href="#audit">
-        <div class="thumb th6"><div class="mini hb6"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
-        <div class="port-body"><h3>Cedar &amp; Sage Wellness</h3><p>IOP treatment center</p><span>View project →</span></div>
-      </a>
+<a class="port reveal" href="https://www.cindyshutherapy.com/" target="_blank" rel="noopener">
+<div class="thumb th1"><div class="mini hb1"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
+<div class="port-body"><h3>Cindy Shu Therapy</h3><p>Solo therapist — minimalist, culturally specific</p><span>Visit the live site ↗</span></div></a>
+<a class="port reveal" href="https://www.wholenesscollectivetherapy.com/" target="_blank" rel="noopener">
+<div class="thumb th2"><div class="mini hb2"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
+<div class="port-body"><h3>Wholeness Collective</h3><p>Group practice — cohesive brand system</p><span>Visit the live site ↗</span></div></a>
+<a class="port reveal" href="https://www.millenniallifecounseling.com/" target="_blank" rel="noopener">
+<div class="thumb th3"><div class="mini hb3"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
+<div class="port-body"><h3>Millennial Life Counseling</h3><p>Niche positioning + content engine</p><span>Visit the live site ↗</span></div></a>
+<a class="port reveal" href="https://www.lotustherapygroup.com/" target="_blank" rel="noopener">
+<div class="thumb th4"><div class="mini hb4"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
+<div class="port-body"><h3>Lotus Therapy Group</h3><p>Trauma &amp; EMDR — education-forward</p><span>Visit the live site ↗</span></div></a>
+<a class="port reveal" href="https://ikigai-integrative.com/" target="_blank" rel="noopener">
+<div class="thumb th5"><div class="mini hb5"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
+<div class="port-body"><h3>Ikigai Integrative</h3><p>Bold voice as differentiator</p><span>Visit the live site ↗</span></div></a>
+<a class="port reveal" href="https://alexandriaarttherapy.com/" target="_blank" rel="noopener">
+<div class="thumb th6"><div class="mini hb6"><div class="mini-bar"><i></i><i></i><i></i></div><div class="mini-body"><div class="mini-h"></div><div class="mini-l"></div><div class="mini-l short"></div><div class="mini-cta"></div></div></div></div>
+<div class="port-body"><h3>Alexandria Art Therapy</h3><p>Specialty practice — visual storytelling</p><span>Visit the live site ↗</span></div></a>
     </div>
+    <div class="hero-ctas reveal" style="justify-content:center;margin-top:40px"><a class="btn btn-ghost" href="portfolio.html">Read the full use-case analyses →</a></div>
   </div>
 </section>
 
@@ -879,15 +518,15 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
       <h2 class="sec-title">Learn before you spend a dollar.</h2>
     </div>
     <div class="blog-grid">
-      <a class="bcard reveal" href="#audit">
+      <a class="bcard reveal" href="blog/migrate-without-losing-rankings.html">
         <div class="bcard-thumb bt1"><div class="ic sm sage" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 17l6-6 4 4 6-6"/><path d="M14 9h6v6"/></svg></div></div>
         <div class="bcard-body"><span class="tag">Mental Health Marketing</span><h3>How to move your therapy website without losing your Google rankings</h3><small>8 min read</small></div>
       </a>
-      <a class="bcard reveal" href="#audit">
+      <a class="bcard reveal" href="blog/squarespace-to-wordpress.html">
         <div class="bcard-thumb bt2"><div class="ic sm" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 9h20M8 21h8M12 18v3"/></svg></div></div>
         <div class="bcard-body"><span class="tag">Website Design</span><h3>Migrating a therapist site from Squarespace to WordPress, step by step</h3><small>8 min read</small></div>
       </a>
-      <a class="bcard reveal" href="#audit">
+      <a class="bcard reveal" href="blog/wix-to-wordpress.html">
         <div class="bcard-thumb bt3"><div class="ic sm amber" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M2 9h20M12 18v3M8 21h8"/></svg></div></div>
         <div class="bcard-body"><span class="tag">Website Design</span><h3>Leaving Wix for WordPress: a therapist's migration guide</h3><small>9 min read</small></div>
       </a>
@@ -902,9 +541,9 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
       <h2 class="sec-title">Fair questions, straight answers.</h2>
     </div>
     <div class="faq-quick reveal">
-      <a class="btn btn-light btn-sm" href="#svc-web">Website Design FAQs</a>
-      <a class="btn btn-light btn-sm" href="#svc-seo">SEO FAQs</a>
-      <a class="btn btn-light btn-sm" href="#svc-app">App Development FAQs</a>
+      <a class="btn btn-light btn-sm" href="services/website-development.html">Website Design FAQs</a>
+      <a class="btn btn-light btn-sm" href="services/seo-content-marketing.html">SEO FAQs</a>
+      <a class="btn btn-light btn-sm" href="services/app-development.html">App Development FAQs</a>
     </div>
     <div class="faq-list reveal">
       <details>
@@ -916,7 +555,7 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
         <p class="faq-a">The reliable stack, in order: a fast website that answers fees/insurance/approach clearly, local SEO so you appear where people search, a strong Google Business Profile and directory presence, and — once those convert — Google Ads for immediate volume. Social media supports trust; it rarely drives volume alone. We sequence them so each layer feeds the next.</p>
       </details>
       <details>
-        <summary>What services does Willowdesk deliver?</summary>
+        <summary>What services does Mental Health Studio deliver?</summary>
         <p class="faq-a">Six: HIPAA-compliant website design and development, mobile app development, SEO and content marketing, Google Ads management, social media optimization, and AI marketing automation. Most practices start with the website + SEO pair; everything else layers on when the data says it should.</p>
       </details>
       <details>
@@ -946,8 +585,8 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
       <div class="fstat"><b>3–5x</b><small>average ad ROAS</small></div>
     </div>
     <div class="hero-ctas reveal" style="justify-content:center">
-      <a class="btn btn-primary" href="#audit">Book a free strategy call</a>
-      <a class="btn btn-light" href="#svc-seo">Explore SEO services</a>
+      <a class="btn btn-primary" href="contact.html">Book a free strategy call</a>
+      <a class="btn btn-light" href="services/seo-content-marketing.html">Explore SEO services</a>
     </div>
     <div class="final-trust reveal"><span>No commitment required</span><span>Results reviewed on the call</span><span>You keep the report</span></div>
   </div>
@@ -957,28 +596,29 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a class="logo" href="#top" style="color:var(--paper)"><span class="logo-mark" aria-hidden="true"></span>Willowdesk</a>
+        <a class="logo" href="index.html" style="color:var(--paper)"><span class="logo-mark" aria-hidden="true"></span>Mental Health <em>Studio</em></a>
         <p>The specialized digital growth partner for forward-thinking mental-health practices. Secure, compliant, and engineered to scale your impact.</p>
         <a class="li-btn" href="https://www.linkedin.com/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
       </div>
       <div>
         <h4>Navigation</h4>
         <ul>
-          <li><a href="#top">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#audit">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#work">Portfolio</a></li>
-          <li><a href="#personas">Who We Serve</a></li>
-          <li><a href="#svc-smo">Social Media Optimization</a></li>
-          <li><a href="#svc-app">App Development</a></li>
-          <li><a href="#svc-ads">Google Ads Management</a></li>
-          <li><a href="#svc-ai">AI Optimization</a></li>
+          <li><a href="services/website-development.html">Website Development</a></li>
+          <li><a href="services/app-development.html">App Development</a></li>
+          <li><a href="services/seo-content-marketing.html">SEO &amp; Content Marketing</a></li>
+          <li><a href="services/social-media-optimization.html">Social Media Optimization</a></li>
+          <li><a href="services/google-ads-management.html">Google Ads Management</a></li>
+          <li><a href="services/ai-optimization.html">AI Optimization</a></li>
         </ul>
       </div>
       <div class="foot-contact">
@@ -989,34 +629,18 @@ footer.site{background:var(--ink);color:var(--muted-2);border-top:1px solid #3a3
         </div>
         <div>
           <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
-          <div><b>Email support</b><small><a href="mailto:hello@willowdesk.com">hello@willowdesk.com</a></small></div>
+          <div><b>Email support</b><small><a href="mailto:hello@mentalhealthstudio.co">hello@mentalhealthstudio.co</a></small></div>
         </div>
       </div>
     </div>
     <div class="foot-bottom">
-      <p>© 2026 Willowdesk. All rights reserved.</p>
+      <p>© 2026 Mental Health Studio. All rights reserved.</p>
       <p class="status"><i></i>Systems Normal</p>
-      <p><a href="#">Privacy Policy</a> · <a href="#">HIPAA</a> · <a href="#">Terms of Service</a></p>
+      <p><a href="privacy.html">Privacy Policy</a> · <a href="hipaa.html">HIPAA</a> · <a href="terms.html">Terms of Service</a></p>
     </div>
   </div>
 </footer>
 
-<script>
-// sticky nav border
-const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10),{passive:true});
-
-// scroll reveal (+ expertise bars animate when score card enters)
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
-document.querySelectorAll('.reveal,#score').forEach(el=>io.observe(el));
-
-// audit form → email handoff (static site, no backend)
-document.getElementById('auditForm').addEventListener('submit',e=>{
-  e.preventDefault();
-  const f=e.target;
-  const body=encodeURIComponent(`Name: ${f.name.value}\nEmail: ${f.email.value}\nWebsite: ${f.site.value}\n\nPlease run my free 15-point practice audit.`);
-  location.href=`mailto:hello@willowdesk.com?subject=${encodeURIComponent('Free practice audit request')}&body=${body}`;
-});
-</script>
+<script src="assets/site.js"></script>
 </body>
 </html>

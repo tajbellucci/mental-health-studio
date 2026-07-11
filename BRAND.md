@@ -1,4 +1,14 @@
-# Willowdesk — Brand & Adaptation Notes
+# Mental Health Studio — Brand & Adaptation Notes
+
+## Rebrand + full-site build 2026-07-12 (v4)
+
+- **Name: Mental Health Studio** (was Willowdesk). Checked 2026-07-12: no agency by this name in the niche; mentalhealthstudio.com/.co — .com TAKEN, **.co AVAILABLE**, mhstudio.io available. "Mental Health" alone rejected — generic, unbrandable.
+- **Multi-page site**: 24 pages — home, about, contact, portfolio, blog + 3 full articles, thanks, privacy/HIPAA/terms, 6 service pages, 6 who-we-serve pages. Shared assets/site.css + site.js.
+- **Form backend LIVE**: FormSubmit.co → pactofficialorg@gmail.com (index + contact). First real submission triggers a FormSubmit activation email — click it once, then submissions flow. Redirects to /thanks.html.
+- **Portfolio = real use cases** (per Taj 2026-07-12): six independent real practice sites analyzed as pattern examples (Cindy Shu Therapy, Wholeness Collective, Millennial Life Counseling, Lotus Therapy Group, Ikigai Integrative, Alexandria Art Therapy) — explicitly labeled "not our clients". Fictional demo builds removed.
+- Repo renamed: github.com/tajbellucci/mental-health-studio · live at tajbellucci.github.io/mental-health-studio/
+
+# (Historical) Willowdesk — Brand & Adaptation Notes
 
 Created 2026-07-09. **Revised 2026-07-10: repositioned per Taj — Willowdesk is a structural clone of MHIS (mentalhealthitsolutions.com) itself, NOT a PiaB-box derivative.** Full agency model: HIPAA-compliant web development, HIPAA mobile app development, SEO/content, digital marketing & Google Ads, social media optimization, AI/practice automation. Same section architecture as MHIS homepage (hero + dashboard mockup, integrations row, pain cards, about, 6 services, 6 personas, free-audit CTA, why-us, 4-stage process, stats band, portfolio, testimonials, blog, FAQ, mega footer) with original copy — their exact text is copyrighted; layout patterns and service lineup are not. Colors/brand deliberately different (warm palette vs their navy/teal).
 
